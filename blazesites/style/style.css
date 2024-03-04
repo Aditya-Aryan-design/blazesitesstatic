@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-align: center;
+    padding: 5px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid red;
+}
+
+.flex{
+    display: flex;
+}
+
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.item-center{
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.card{
+    box-shadow: 0 0 5px 1px #aaa ;
+}
+
+
+.whatsAppBtn{
+    position: sticky;
+    top: 80vh;
+    left: 80vw;
+    background-color: chartreuse;
+    font-size: 7vmin;
+    padding: 2vmin 4vmin;
+    z-index: 100;
+    border-radius: 50%;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="BlazeSites offers professional and affordable web development services tailored to businesses in Pune, Mumbai, and throughout India. From custom website design to e-commerce solutions and responsive development, we specialize in delivering high-quality websites that drive results without breaking the bank. Contact us today to elevate your online presence and stand out in the digital marketplace.">
+  <meta name="keywords"
+    content="Cheap website developer near me, Website developer in Pune, Website developer contact number, Website developer in Mumbai, Website development in India, Web developer in India, Top 10 website development in India, How much should I pay a web developer, How much do Indian web developers cost">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Affordable Web Development Solutions in Pune, Mumbai, and Across India| BlazeSites - Contact</title>
+
+</head>
+
+<body>
+
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand color" href="/" style="font-weight: bold; font-size: 4vmin;">Blaze<span
+          class="text-danger">Sites</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+        style="border: none;">
+        <span class="navbar-toggler-icon" style="font-size: 4vmin;"></span>
+      </button>
+      <div class="collapse navbar-collapse mt-1" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-danger" aria-current="page" href="/contact.html">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- WhatsAppButton -->
+  <a href="https://wa.me/qr/JHMDS3TUB3GCK1" target="_blank" class="whatsAppBtn"><i class="fa-brands fa-whatsapp"
+      style="color: white;"></i>
+  </a>
+
+
+  <!-- ownerContacts -->
+  <div style="width: 90vw; margin: auto; font-weight: 500; color: #999;">
+    <p class="text-center">If you want to create a website, send mail on <a href="mailto:devadityaaryan@gmail.com"
+        style="text-decoration: none; color:red">devadityaaryan@gmail.com</a> or Whatsapp on <a href="tel:9693967364"
+        style="text-decoration: none; color:red">+919693967364</a>.</p>
+  </div>
+
+
+  <!-- inputForm -->
+  <form class="row g-3 p-4" style="width: 98vw;" id="form">
+    <div class="col-12">
+      <label for="inputName" class="form-label">Name</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Enter your name" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="Enter your email" required>
+    </div>
+    <div class="col-md-6">
+      <label for="inputPhone" class="form-label">Phone</label>
+      <input type="tel" class="form-control" id="inputPhone" placeholder="Enter your phone no." required>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+        <label class="form-check-label" for="gridCheck">
+          I am not a robot
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-danger">Submit</button>
+    </div>
+  </form>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0f2d8fd2af.js" crossorigin="anonymous"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script>
+
+    const form = document.getElementById("form");
+
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault()
+
+      const name = document.getElementById("inputName");
+      const email = document.getElementById("inputEmail");
+      const phone = document.getElementById("inputPhone");
+
+      Email.send({
+        SecureToken: "d1d88498-e0bf-42d0-8082-abfc7455ba1e",
+        To: 'onlinemba809@gmail.com',
+        From: "onlinemba809@gmail.com",
+        Subject: "New user",
+        Body: `
+    <p>Name:${name.value}</p>
+    <p>Email:${email.value}</p>
+    <p>Phone:${phone.value}</p>
+    <p>Sent by BlazeSites</p>
+      `
+      }).then(
+        message => {
+          alert(message);
+          name.value = "";
+          email.value = "";
+          phone.value = "";
+        }
+      ).catch(
+        e => alert("Some Error Accurd!")
+      );
+    })
+  </script>
+</body>
+
+</html>
